@@ -25,6 +25,9 @@ backend/venv/
 backend/.venv/
 backend/.env
 
+# Railway temp files during deployment
+frontend-files/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
