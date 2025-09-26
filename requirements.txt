@@ -1,0 +1,11 @@
+# Root requirements.txt for Railway deployment
+# This file includes backend dependencies for proper deployment
+
+flask==3.0.3
+flask-cors==4.0.1
+semantic-kernel==0.9.1b1
+pandas==2.2.3
+python-dotenv==1.0.1
+gunicorn==21.2.0
+# Compatibility pins
+pydantic==2.9.2
