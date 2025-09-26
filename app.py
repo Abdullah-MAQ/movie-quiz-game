@@ -13,7 +13,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-RAW_DATASET_PATH = os.getenv("MOVIE_DATASET", os.path.join(os.path.dirname(__file__), "..", "movies.csv"))
+RAW_DATASET_PATH = os.getenv("MOVIE_DATASET", os.path.join(os.path.dirname(__file__), "movies.csv"))
 DATASET_PATH = str(pathlib.Path(RAW_DATASET_PATH).resolve())
 print(f"[backend] Using dataset: {DATASET_PATH}")
 
