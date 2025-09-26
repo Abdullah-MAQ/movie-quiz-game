@@ -1,26 +1,20 @@
 {
   "builds": [
     {
-      "src": "backend/app.py",
-      "use": "@vercel/python"
-    },
-    {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": { 
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/app.py"
-    },
     {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ],
   "env": {
-    "GOOGLE_API_KEY": "@google-api-key"
+    "VITE_API_BASE_URL": "@vite-api-base-url"
   }
 }
