@@ -13,8 +13,5 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "env": {
-    "VITE_API_BASE_URL": "@vite-api-base-url"
-  }
+  ]
 }
